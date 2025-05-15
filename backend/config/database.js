@@ -8,7 +8,7 @@ const mongodbURl = process.env.MONGODB_URL
 export const connectDb = async () =>{
     try{
         await mongoose.connect(mongodbURl)
-        console.log('your db is connect successfully')
+        console.log('your database is connect successfully')
     } catch(error){
         console.error(error.message);
         
